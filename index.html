@@ -11,8 +11,97 @@
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <div class="intro">
         <h1 id="title">Tutoring with Sebastián</h1>
-        <p id="description"> The following form is  </p>
+        <p id="description"> This form is to reserve personalized tutoring with Sebastián Chávarry in different courses of Systems Engineering at Universidad de Lima.</p>
     </div>
+    <form action="" id="survey-form">
+        
+        <!-- Apartado de nombre -->
+        <div class="form-box">
+            <label for="name" id="name-label">Name</label>
+            <input id="name" type="text" placeholder="Insert your full name"  class="cuadrado-input" required>
+        </div>
+        
+        <!-- Apartado de email -->
+        <div class="form-box">
+            <label for="email" id="email-label">Email</label>
+            <input type="text" id="email" placeholder="Insert your Email" class="cuadrado-input" required>
+        </div>
+
+        <!-- Apartado de phone number -->
+        <div class="form-box">
+            <label for="number" id="number-label">Phone Number</label>
+            <input type="number" id="number" placeholder="Insert your phone number" class="cuadrado-input">
+        </div>
+
+        <!-- Apartado de cursos -->
+        <div class="form-box">
+            <label for="courses">What courses do you need help with?</label>
+            <select name="courses" id="dropdown" class="dropdown">
+                <option disabled selected value>Pick a course</option>
+                <option value="cal2">Cálculo 2</option>
+                <option value="cal3">Cálculo 3</option>
+                <option value="ep1">EP1</option>
+                <option value="ep2">EP2</option>
+                <option value="iap">Introducción a la Programación</option>
+                <option value="poo">POO</option>
+                <option value="eda">EDA</option>
+                <option value="lp">Lenguajes de Programación</option>
+                <option value="geco">Gestión Contable</option>
+                <option value="coo">Costeo de Operaciones</option>
+                <option value="gefi">Gestión Financiera</option>
+            </select>
+        </div>
+        
+        <!-- Apartado de horas  -->
+        <div class="form-box" id="horas">
+            <p> How many tutoring hours do you need?</p> 
+
+            <label for="primera">
+                <input class= "radio-buton" name = "user-horas" type="radio" value="primera" id="primera"> 1-2h 
+            </label>
+
+            <label for="segunda">
+                <input class= "radio-buton" name = "user-horas" type="radio" value="segunda" id="segunda"> 3-4h 
+            </label>
+
+            <label for="tercera">
+                <input class= "radio-buton" name = "user-horas" type="radio" value="tercera" id="tercera"> 5-6h 
+            </label>
+
+            <label for="cuarta">
+                <input class= "radio-buton" name = "user-horas" type="radio" value="cuarta" id="cuarta"> 7-8h 
+            </label>
+
+            <label for="quinta">
+                <input class= "radio-buton" name = "user-horas" type="radio" value="quinta" id="quinta"> + 8h 
+            </label>
+        </div>
+
+        <!-- Apartado de donde me conociste -->
+        <div class="form-box">
+            <p>How did you find this page?</p>
+            <label><input type="checkbox" name="know" value= "social" class="input-checkbox"> Social Media</label>
+            <label><input type="checkbox" name="know" value= "friends" class="input-checkbox"> Friends recommendation</label>
+            <label><input type="checkbox" name="know" value= "prof" class="input-checkbox"> Professor recommendation</label>
+            <label><input type="checkbox" name="know" value= "class" class="input-checkbox"> We shared class together lol</label>
+            <label><input type="checkbox" name="know" value= "other" class="input-checkbox"> Other</label>
+
+        </div>
+
+        <!-- Apartado add info -->
+        <div class="form-box">
+            <label for="info"> Any additional comment?</label>
+            <textarea name="info" id="info" cols="30" rows="10"></textarea>
+
+        </div>
+        <!-- Apartado de Submit -->
+        <div class="form-box">
+            <button type="submit" id="submit" class="submit-button">
+                Submit
+            </button>
+        </div>
+
+    </form>
     
 </body>
 </html>
@@ -27,9 +116,8 @@
     1) Ingresa nombre
     2) Ingresa mail
     3) Ingresa tu phone number
-    4) que carrera estudias ? Industrial o Sistemas
-    5) En que cursos necesitas ayuda 
-    6) Cuantas horas de asesoría necesitas
-    7) que días estás libre
-    8) Algún comentario adicional 
+    4) En que cursos necesitas ayuda 
+    5) Cuantas horas de asesoría necesitas
+    6) Por donde me conociste
+    7) Algún comentario adicional 
  -->

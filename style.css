@@ -24,3 +24,16 @@ body::before
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.form-box 
+{
+
+}
+
+label
+{
+  display:flex;
+}
+
+
+
