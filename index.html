@@ -17,6 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Moon+Dance&family=Open+Sans+Condensed:wght@300&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <title>Survey Form</title>
+    
 </head>
 
 
@@ -37,13 +38,13 @@
         <!-- Apartado de email -->
         <div class="form-box">
             <label for="email" id="email-label">Email</label>
-            <input type="text" id="email" placeholder="Insert your Email" class="cuadrado-input" required>
+            <input type="email" id="email" placeholder="Insert your Email" class="cuadrado-input" required>
         </div>
 
         <!-- Apartado de phone number -->
         <div class="form-box">
             <label for="number" id="number-label">Phone Number</label>
-            <input type="number" id="number" placeholder="Insert your phone number" class="cuadrado-input">
+            <input type="number" id="number" placeholder="Insert your phone number" class="cuadrado-input" min=9 max=9 >
         </div>
 
         <!-- Apartado de cursos -->
@@ -104,7 +105,7 @@
         <!-- Apartado add info -->
         <div class="form-box">
             <label for="info"> Any additional comment?</label>
-            <textarea name="info" id="info" cols="30" rows="10"></textarea>
+            <textarea name="info" id="info" cols="50" rows="10"></textarea>
 
         </div>
         <!-- Apartado de Submit -->
